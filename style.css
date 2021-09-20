@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Public Sans', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu li {
+    padding: 1rem;
+    list-style: none;
+}
+
+#menu li a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+    transition: .6s;
+    position: relative;
+}
+
+#menu li a::after {
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(49, 211, 92);
+}
+
+#contratar {
+    width: 150px;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    background: -webkit-linear-gradient(180deg, #31D35C, #62F5F5);
+}
+
+#contratar:hover {
+    background: -webkit-linear-gradient(90deg, #31D35C, #62F5F5);
+}
+
+.header-img-flex {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-color: hsl(0, 0%, 98%);
+    background-position: 37rem;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+
+.header-text-cont {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-text-cont h1 {
+    width: 60%;
+    font-size: 3.5em;
+    font-weight: 100;
+    padding: 1rem 0;
+    color: hsl(233, 26%, 24%);
+    font-family: 'Merriweather', serif;
+}
+
+.header-text-cont p {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: hsl(233, 8%, 62%);
+    font-size: 1.1em;
+    font-weight: 100;
+    padding: 0.5rem 0;
+}
+
+#assinar {
+    width: 60%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    background: -webkit-linear-gradient(180deg, #31D35C, #62F5F5);
+}
+
+.cards-options {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #F4F5F7;
+}
+
+.conteudo {
+    width: 80%;
+    margin: auto;
+}
+
+.conteudo h2 {
+    font-size: 2.7em;
+    font-weight: 100;
+    padding: 1rem 0;
+}
+
+.conteudo p {
+    width: 55%;
+    padding: 1rem 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+
+}
+
+.card-warp {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    margin: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card img {
+    padding: 2rem 0;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+    padding: 2rem 0;
+}
+
+.card p {
+    width: 100%;
+    font-size: 1em;
+    font-weight: 100;
+    color: hsl(233, 8%, 62%);
+}
+
+.card-noticias{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#FAFAFA;
+}
+
+.titulo{
+    width: 80%;
+}
+
+.titulo h2 {
+    font-size: 2.7em;
+    font-weight: 100;
+    padding: 1rem;
+}
+
+.card-photos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cards{
+    width: 23%;
+    height: 425px;
+    border-radius: 0.3rem;
+    clip-path:stroke-box;
+    margin: 0.5rem;
+    background-color: white;
+}
+
+.cards img{
+    width: 100%;
+    height: 195px;
+}
+
+.cards p{
+    font-size: 0.8em;
+    padding:  1rem;
+    color: hsl(233, 8%, 62%);
+}
+
+.cards h3{
+    width: 90%;
+    padding: 0 1rem;
+    font-weight: 200;
+    color: hsl(233, 26%, 24%);
+}
+
+.info{
+    width: 95%;
+}
+
+
+
+@media (max-width: 910px){
+
+    .card-warp {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card p {
+        width: 95%;
+        font-size: 1.03em;
+        font-weight: 100;
+        color: hsl(233, 8%, 62%);
+    }
+
+    .cards{
+        width: 30%;
+    }
+
+    .card-photos{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .cards{
+        width: 40%;
+        height: 400px;
+        border-radius: 0.3rem;
+        clip-path:stroke-box;
+        margin: 1rem;
+        background-color: white;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    #menu {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+    }
+
+    #menu a {
+        display: block;
+        padding: 0.5rem;
+    }
+
+
+    #menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 80px;
+        right: 0;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: 70vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu li {
+        padding: 0.5rem;
+        font-weight: 100;
+        font-size: 1.1em;
+    }
+
+    #menu li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #menu li a:hover {
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        z-index: 1100;
+        border-top: 2px solid rgb(0, 0, 0);
+        width: 25px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: rgb(0, 0, 0);
+        margin-top: 5px;
+        transition: 0.6s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(140deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-140deg);
+        top: -7px;
+    }
+
+    #contratar {
+        width: 200px;
+    }
+
+    .header-img-flex {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-image: url(/images/bg-intro-mobile.svg);
+        background-size: 210%;
+        background-repeat: no-repeat;
+        background-position: 0.1%;
+    }
+
+    .mockups-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-text-cont {
+        width: 100%;
+    }
+
+    .header-text-cont h1 {
+        width: 90%;
+        font-size: 3rem;
+        padding: 0.5rem;
+    }
+
+    .header-text-cont p {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    #assinar {
+        width: 80%;
+    }
+
+
+    .card-warp {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .conteudo p {
+        width: 90%;
+    }
+    
+    .card {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card-photos{
+        width: 100%;
+    }
+
+    .cards{
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
