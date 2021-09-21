@@ -20,12 +20,15 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
+    position: fixed;
     padding: 1rem;
+    z-index: 3000;
 }
 
 nav {
+    z-index: 2000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,18 +94,19 @@ nav {
 
 
 .header-text-cont {
-    width: 60%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 .header-text-cont h1 {
     width: 60%;
     font-size: 3.5em;
     font-weight: 100;
-    padding: 1rem 0;
+    padding: 1.5rem 3rem ;
     color: hsl(233, 26%, 24%);
     font-family: 'Merriweather', serif;
 }
@@ -116,12 +120,12 @@ nav {
     color: hsl(233, 8%, 62%);
     font-size: 1.1em;
     font-weight: 100;
-    padding: 0.5rem 0;
+    padding: 1rem 3rem;
 }
 
 #assinar {
-    width: 60%;
-    margin: 1rem;
+    width: 20%;
+    margin: 1rem 3rem;
     padding: 1rem;
     border-radius: 2rem;
     font-size: 1em;
@@ -199,7 +203,7 @@ nav {
     color: hsl(233, 8%, 62%);
 }
 
-.card-noticias{
+.card-noticias {
     width: 100%;
     margin: auto;
     height: auto;
@@ -207,10 +211,10 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color:#FAFAFA;
+    background-color: #FAFAFA;
 }
 
-.titulo{
+.titulo {
     width: 80%;
 }
 
@@ -220,7 +224,7 @@ nav {
     padding: 1rem;
 }
 
-.card-photos{
+.card-photos {
     width: 80%;
     margin: auto;
     display: flex;
@@ -230,38 +234,38 @@ nav {
     flex-direction: row;
 }
 
-.cards{
+.cards {
     width: 23%;
     height: 425px;
     border-radius: 0.3rem;
-    clip-path:stroke-box;
+    clip-path: stroke-box;
     margin: 0.5rem;
     background-color: white;
 }
 
-.cards img{
+.cards img {
     width: 100%;
     height: 195px;
 }
 
-.cards p{
+.cards p {
     font-size: 0.8em;
-    padding:  1rem;
+    padding: 1rem;
     color: hsl(233, 8%, 62%);
 }
 
-.cards h3{
+.cards h3 {
     width: 90%;
     padding: 0 1rem;
     font-weight: 200;
     color: hsl(233, 26%, 24%);
 }
 
-.info{
+.info {
     width: 95%;
 }
 
-footer{
+footer {
     width: 100%;
     height: 200px;
     background-color: hsl(233, 26%, 24%);
@@ -273,19 +277,19 @@ footer{
     padding: 3rem;
 }
 
-.bundlee{
+.bundlee {
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
 
-.one{
+.one {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.icones{
+.icones {
     width: 100%;
     display: flex;
     align-items: center;
@@ -293,28 +297,28 @@ footer{
     flex-direction: row;
 }
 
-.icones a{
+.icones a {
     color: white;
     font-size: 1.5em;
     padding: 1rem;
     transition: 1s;
 }
 
-.icones a:hover{
+.icones a:hover {
     color: #31D35C;
 }
 
-.two{
+.two {
     columns: 2;
 }
 
-.two ul li{
+.two ul li {
     list-style: none;
     padding: 0.1rem;
 }
 
 
-.two ul li a{
+.two ul li a {
     color: rgba(255, 255, 255, 0.767);
     font-size: 1.1em;
     font-weight: 100;
@@ -323,11 +327,11 @@ footer{
     transition: .6s;
 }
 
-.two ul li a:hover{
+.two ul li a:hover {
     color: #31D35C;
 }
 
-.tree{
+.tree {
     width: 30%;
     height: 100px;
     display: flex;
@@ -336,8 +340,42 @@ footer{
     justify-content: space-between;
 }
 
-@media (max-width: 910px){
+@media (max-width: 910px) {
+    .header-img-flex {
+        width: 100%;
+        height: 540px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        background-image: url(/images/bg-intro-desktop.svg);
+        background-color: hsl(0, 0%, 98%);
+        background-position: 390%;
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
 
+    .header-text-cont {
+        width: 90%;
+    }
+
+    .header-text-cont h1 {
+        width: 110%;
+        font-size: 3.1rem;
+    }
+
+    .header-text-cont p{
+        padding: 0 3rem ;
+        align-self: start;
+        width: 90%;
+    }
+
+    #assinar{
+        margin: 2rem;
+        align-self: start;
+        width: 50%;
+    }
+    
     .card-warp {
         width: 90%;
         flex-wrap: wrap;
@@ -354,11 +392,11 @@ footer{
         color: hsl(233, 8%, 62%);
     }
 
-    .cards{
+    .cards {
         width: 30%;
     }
 
-    .card-photos{
+    .card-photos {
         width: 80%;
         margin: auto;
         display: flex;
@@ -367,12 +405,12 @@ footer{
         flex-wrap: wrap;
         flex-direction: row;
     }
-    
-    .cards{
+
+    .cards {
         width: 40%;
         height: 400px;
         border-radius: 0.3rem;
-        clip-path:stroke-box;
+        clip-path: stroke-box;
         margin: 1rem;
         background-color: white;
     }
@@ -514,7 +552,7 @@ footer{
     #assinar {
         width: 80%;
     }
-    
+
     .card-warp {
         width: 90%;
         height: auto;
@@ -524,13 +562,13 @@ footer{
     .conteudo p {
         width: 90%;
     }
-    
+
     .card {
         width: 100%;
         height: 300px;
     }
 
-    .card-photos{
+    .card-photos {
         width: 100%;
         display: flex;
         align-items: center;
@@ -538,12 +576,12 @@ footer{
         flex-direction: column;
     }
 
-    .cards{
+    .cards {
         width: 80%;
         margin: 1rem;
     }
 
-    footer{
+    footer {
         width: 100%;
         height: auto;
         background-color: hsl(233, 26%, 24%);
@@ -552,43 +590,43 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 5rem ;
+        padding: 5rem;
     }
 
-    .bundlee{
+    .bundlee {
         width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
-    .one{
+
+    .one {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
-    .icones{
+
+    .icones {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
     }
-      
-    .two{
+
+    .two {
         width: 100%;
         columns: 2;
     }
-    
-    .two ul li{
+
+    .two ul li {
         list-style: none;
         padding: 0.5rem;
     }
-    
-    
-    .two ul li a{
+
+
+    .two ul li a {
         color: rgba(255, 255, 255, 0.767);
         font-size: 1.1em;
         font-weight: 100;
@@ -596,12 +634,12 @@ footer{
         position: relative;
         transition: .6s;
     }
-    
-    .two ul li a:hover{
+
+    .two ul li a:hover {
         color: #31D35C;
     }
-    
-    .tree{
+
+    .tree {
         width: 90%;
         display: flex;
         align-items: center;
