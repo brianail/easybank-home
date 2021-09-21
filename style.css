@@ -200,6 +200,7 @@ nav {
 
 .card-noticias{
     width: 100%;
+    margin: auto;
     height: auto;
     display: flex;
     align-items: center;
@@ -454,7 +455,7 @@ nav {
     
     .card {
         width: 100%;
-        height: 250px;
+        height: 300px;
     }
 
     .card-photos{
@@ -462,7 +463,8 @@ nav {
     }
 
     .cards{
-        width: 90%;
+        width: 80%;
+        margin: auto;
     }
 
 }
