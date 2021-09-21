@@ -443,6 +443,7 @@ nav {
     }
 
 
+    
     .card-warp {
         width: 90%;
         height: auto;
@@ -460,11 +461,15 @@ nav {
 
     .card-photos{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .cards{
         width: 80%;
-        margin: auto;
+        margin: 1rem;
     }
 
 }
