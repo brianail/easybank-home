@@ -103,7 +103,7 @@ nav {
 }
 
 .header-text-cont h1 {
-    width: 60%;
+    width: 80%;
     font-size: 3.5em;
     font-weight: 100;
     padding: 1.5rem 3rem ;
@@ -112,7 +112,7 @@ nav {
 }
 
 .header-text-cont p {
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,8 +123,12 @@ nav {
     padding: 1rem 3rem;
 }
 
+.mockups-bg{
+    width: 120%;
+}
+
 #assinar {
-    width: 20%;
+    width: 30%;
     margin: 1rem 3rem;
     padding: 1rem;
     border-radius: 2rem;
@@ -205,6 +209,7 @@ nav {
 
 .card-noticias {
     width: 100%;
+    padding: 3rem 0;
     margin: auto;
     height: auto;
     display: flex;
@@ -340,14 +345,23 @@ footer {
     justify-content: space-between;
 }
 
-.attribution {
+.tree h4{
     padding: 1rem 0;
-    font-size: 11px;
+    font-size: 0.8em;
+    font-weight: 100;
     text-align: center;
 }
 
+.attribution {
+    background-color: hsl(233, 26%, 24%);
+    padding: 1rem 0;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: #31D35C;
 }
 
 @media (max-width: 910px) {
