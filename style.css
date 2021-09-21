@@ -53,13 +53,21 @@ nav {
     position: relative;
 }
 
-#menu li a::after {
-    width: 100%;
-    height: 2rem;
+#menu a::after {
+    content: '';
+    width: 0;
+    height: 3px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -5px;
     background-color: rgb(49, 211, 92);
+    transition: all 300ms ease-in-out;
+    transform: scale(0, 0);
+}
+
+#menu a:hover:after {
+    transform: scale(1.1);
+    width: 100%;
 }
 
 #contratar {
@@ -106,7 +114,7 @@ nav {
     width: 80%;
     font-size: 3.5em;
     font-weight: 100;
-    padding: 1.5rem 3rem ;
+    padding: 1.5rem 3rem;
     color: hsl(233, 26%, 24%);
     font-family: 'Merriweather', serif;
 }
@@ -123,7 +131,7 @@ nav {
     padding: 1rem 3rem;
 }
 
-.mockups-bg{
+.mockups-bg {
     width: 100%;
 }
 
@@ -345,7 +353,7 @@ footer {
     justify-content: space-between;
 }
 
-.tree h4{
+.tree h4 {
     padding: 1rem 0;
     font-size: 0.8em;
     font-weight: 100;
@@ -388,18 +396,18 @@ footer {
         font-size: 3.1rem;
     }
 
-    .header-text-cont p{
-        padding: 0 3rem ;
+    .header-text-cont p {
+        padding: 0 3rem;
         align-self: start;
         width: 90%;
     }
 
-    #assinar{
+    #assinar {
         margin: 2rem;
         align-self: start;
         width: 50%;
     }
-    
+
     .card-warp {
         width: 90%;
         flex-wrap: wrap;
@@ -570,7 +578,7 @@ footer {
         width: 100%;
         margin: auto;
         font-size: 2.5rem;
-        padding: 1rem ;
+        padding: 1rem;
     }
 
     .header-text-cont p {
@@ -655,7 +663,7 @@ footer {
         text-align: center;
     }
 
-    .two ul li{
+    .two ul li {
         padding: 0.5rem;
     }
 
@@ -668,7 +676,7 @@ footer {
         justify-content: center;
     }
 
-    .tree h4{
+    .tree h4 {
         width: 100%;
         padding: 1rem 0;
         font-size: 0.7em;
